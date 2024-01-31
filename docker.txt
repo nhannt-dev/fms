@@ -1,0 +1,9 @@
+docker exec -it <container_id> mysql -u<username> -p<password>
+For Example:
+    docker exec -it 118ea2ffd4e8 mysql -usail -ppassword
+
+USE <database_name>;
+For Example:
+    USE fms;
+
+SELECT * FROM <table>;

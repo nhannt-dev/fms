@@ -1,0 +1,34 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "controller": "php artisan make:controller <Name>Controller",
+        "model": "php artisan make:model <Name>",
+        "model:migrate": "php artisan make:model <Name> -m",
+        "dump": "composer dump-autoload",
+        "factory": "php artisan make:factory <Name>Factory",
+        "mail": "php artisan make:mail <Name>Email",
+        "req": "php artisan make:request <Name>Request",
+        "seed": "php artisan db:seed",
+        "seeder": "php artisan make:seeder <Name>Seeder",
+        "migrate": "php artisan make:migration create_<name>s_table",
+        "mgrt": "php artisan migrate",
+        "mgrt:refresh": "php artisan migrate:refresh",
+        "tinker": "php artisan tinker",
+        "sleep5s": "node -e \"setTimeout(() => process.exit(0), 5000)\"",
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@inertiajs/vue3": "^1.0.0",
+        "@tailwindcss/forms": "^0.5.3",
+        "@vitejs/plugin-vue": "^5.0.0",
+        "autoprefixer": "^10.4.12",
+        "axios": "^1.6.4",
+        "laravel-vite-plugin": "^1.0.0",
+        "postcss": "^8.4.31",
+        "tailwindcss": "^3.2.1",
+        "vite": "^5.0.0",
+        "vue": "^3.4.0"
+    }
+}
