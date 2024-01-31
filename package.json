@@ -3,12 +3,12 @@
     "type": "module",
     "scripts": {
         "controller": "php artisan make:controller <Name>Controller",
-        "model": "php artisan make:model <Name>",
-        "model:migrate": "php artisan make:model <Name> -m",
+        "model": "php artisan make:model StarredFile -m",
         "dump": "composer dump-autoload",
         "factory": "php artisan make:factory <Name>Factory",
         "mail": "php artisan make:mail <Name>Email",
         "req": "php artisan make:request <Name>Request",
+        "require": "composer require kalnoy/nestedset league/flysystem-aws-s3-v3 psr/http-message",
         "seed": "php artisan db:seed",
         "seeder": "php artisan make:seeder <Name>Seeder",
         "migrate": "php artisan make:migration create_<name>s_table",
@@ -30,5 +30,10 @@
         "tailwindcss": "^3.2.1",
         "vite": "^5.0.0",
         "vue": "^3.4.0"
+    },
+    "dependencies": {
+        "@headlessui/vue": "^1.7.17",
+        "@heroicons/vue": "^2.1.1",
+        "mitt": "^3.0.1"
     }
 }

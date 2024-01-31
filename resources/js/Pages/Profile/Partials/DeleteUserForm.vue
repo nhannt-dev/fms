@@ -45,12 +45,12 @@
 </template>
 
 <script setup>
-import DangerButton from '@/Components/DangerButton.vue';
-import InputError from '@/Components/InputError.vue';
-import InputLabel from '@/Components/InputLabel.vue';
-import Modal from '@/Components/Modal.vue';
-import SecondaryButton from '@/Components/SecondaryButton.vue';
-import TextInput from '@/Components/TextInput.vue';
+import DangerButton from '@/Components/Global/DangerButton.vue';
+import InputError from '@/Components/Global/InputError.vue';
+import InputLabel from '@/Components/Global/InputLabel.vue';
+import Modal from '@/Components/Global/Modal.vue';
+import SecondaryButton from '@/Components/Global/SecondaryButton.vue';
+import TextInput from '@/Components/Global/TextInput.vue';
 import { useForm } from '@inertiajs/vue3';
 import { nextTick, ref } from 'vue';
 

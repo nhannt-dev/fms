@@ -48,12 +48,12 @@
 </template>
 
 <script setup>
-import Checkbox from '@/Components/Checkbox.vue';
+import Checkbox from '@/Components/Global/Checkbox.vue';
 import GuestLayout from '@/Layouts/GuestLayout.vue';
-import InputError from '@/Components/InputError.vue';
-import InputLabel from '@/Components/InputLabel.vue';
-import PrimaryButton from '@/Components/PrimaryButton.vue';
-import TextInput from '@/Components/TextInput.vue';
+import InputError from '@/Components/Global/InputError.vue';
+import InputLabel from '@/Components/Global/InputLabel.vue';
+import PrimaryButton from '@/Components/Global/PrimaryButton.vue';
+import TextInput from '@/Components/Global/TextInput.vue';
 import { Head, Link, useForm } from '@inertiajs/vue3';
 
 defineProps({
