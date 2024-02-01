@@ -39,13 +39,17 @@
             </MenuItems>
         </transition>
     </Menu>
+    <CreateFolderModal v-model="createFolderModal"/>
 </template>
 
 <script setup>
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
-import { ChevronDownIcon } from "@heroicons/vue/20/solid";
+import CreateFolderModal from './CreateFolderModal.vue';
+import { ref } from 'vue';
+
+const createFolderModal = ref(false)
 
 function showCreateFolderModal() {
-
+    createFolderModal.value = true
 }
 </script>
