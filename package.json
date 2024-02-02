@@ -8,6 +8,7 @@
         "factory": "php artisan make:factory <Name>Factory",
         "mail": "php artisan make:mail <Name>Email",
         "req": "php artisan make:request ParentIdBaseRequest",
+        "resource": "php artisan make:resource FileResource",
         "require": "composer require kalnoy/nestedset league/flysystem-aws-s3-v3 psr/http-message",
         "seed": "php artisan db:seed",
         "seeder": "php artisan make:seeder <Name>Seeder",

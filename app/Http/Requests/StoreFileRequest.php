@@ -3,13 +3,11 @@
 namespace App\Http\Requests;
 
 use App\Models\File;
-use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;
 
 class StoreFileRequest extends ParentIdBaseRequest
 {
-
 
     public function rules(): array
     {

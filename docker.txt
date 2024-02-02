@@ -1,6 +1,6 @@
 docker exec -it <container_id> mysql -u<username> -p<password>
 For Example:
-    docker exec -it cdc533bcfca6 mysql -usail -ppassword
+    docker exec -it a6f9d8f1e328 mysql -usail -ppassword
 
 show databases;
 
