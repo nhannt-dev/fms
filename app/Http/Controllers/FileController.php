@@ -20,7 +20,9 @@ class FileController extends Controller
         }
         $files = File::query()->where('parent_id', $folder->id)->where('created_by', Auth::id())->orderBy('is_folder', 'DESC')->orderBy('created_at', 'DESC')->paginate(10);
         $files = FileResource::collection($files);
-        return Inertia::render('MyFiles', compact('files'));
+        $ancestors = FileResource::collection([...$folder->ancestors, $folder]);
+        $folder = new FileResource($folder);
+        return Inertia::render('MyFiles', compact('files', 'folder', 'ancestors'));
     }
 
     public function trash()

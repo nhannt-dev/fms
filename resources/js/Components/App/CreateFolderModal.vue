@@ -27,18 +27,20 @@ import SecondaryButton from '../Global/SecondaryButton.vue';
 import PrimaryButton from '../Global/PrimaryButton.vue';
 
 import { nextTick, ref } from "vue";
-import { useForm } from '@inertiajs/vue3';
+import { useForm, usePage } from '@inertiajs/vue3';
 
 const { modelValue } = defineProps({
     modelValue: Boolean
 })
 
 const folderNameInput = ref(null)
+const page = usePage()
 
 const emit = defineEmits(['update:modelValue'])
 
 const form = useForm({
-    name: ''
+    name: '',
+    parent_id: null
 })
 
 function onShow() {
@@ -46,6 +48,7 @@ function onShow() {
 }
 
 function createFolder() {
+    form.parent_id = page.props.folder.id
     form.post(route('folder.create'), {
         preserveScroll: true,
         onSuccess: () => {
